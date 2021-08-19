@@ -102,16 +102,35 @@ a:hover {
 }
 
 .skill {
-  width: 220px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
 
-.skill > img {
-  height: 150px;
+.skill-big {
+  width: 220px;
+}
+
+.skill-small {
   width: 150px;
+}
+
+.skill > img {
   object-fit: contain;
   margin: 0 auto;
+}
+
+.skill-big > img {
+  height: 150px;
+  width: 150px;
+}
+
+.skill-small > img {
+  height: 80px;
+  width: 80px;
+}
+
+.skills {
+  background: coral;
 }
