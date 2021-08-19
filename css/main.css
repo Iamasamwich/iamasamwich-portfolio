@@ -36,5 +36,12 @@ body {
 }
 
 #content > div {
-  
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.heading {
+  font-size: 50px;
+  background-color: burlywood;
 }
