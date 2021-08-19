@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I am a Samwich</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type='image/x-icon' href="favicon.ico">
+</head>
+<body>
+  <div class="navbar">
+    <div class="navButtons">
+      <button class="button" id="contact">Contact Me</button>
+      <button class="button" id="skills">Skills and Tools</button>
+      <button class="button" id="about-me">About Me</button>
+      <button class="button" id="projects">Projects</button>
+      <button class="button to-top" id="to-top">
+        <img src="images/arrow_line.png" id="up-arrow" class="up-arrow" alt="Back to Top">
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <h1 class="typed-heading"></h1>
+
+    <div class="content">
+
+      <div class="heading">
+        <h1>Hi, I'm Sam</h1>
+      </div>
+
+      <div class="contact main-segment">
+        <table>
+          <th>
+            <h2>Contact me...</h2>
+          </th>
+          <tr class='contact-row'>
+            <td>
+              <img src="images/contact/email-icon.png" class="contact-icon">
+              <a href="mailto:&#115;&#097;&#109;&#064;&#105;&#097;&#109;&#097;&#115;&#097;&#109;&#119;&#105;&#099;&#104;&#046;&#099;&#111;&#109;">
+                &#115;&#097;&#109;&#064;&#105;&#097;&#109;&#097;&#115;&#097;&#109;&#119;&#105;&#099;&#104;&#046;&#099;&#111;&#109;
+              </a>
+            </td>
+            <td>
+              <img src="images/contact/github-icon.png" class="contact-icon">
+              <a href="http://github.com/SamHumphreys" target="_blank">
+                My GitHub Page
+              </a>
+            </td>
+          </tr>
+          <tr class='contact-row'>
+            <td>
+              <img src="images/contact/linkedin-icon.png" class="contact-icon">
+              <a href="http://au.linkedin.com/in/samhumphreys"
+               target="_blank">
+               LinkedIn
+              </a>
+            </td>
+            <td>
+              <img src="images/contact/twitter-icon.png" class="contact-icon">
+              <a href="https://twitter.com/iamasamwich"
+               target="_blank">
+               Twitter
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="skills main-segment">
+        <h2>Skills and tools...</h2>
+        <div class="skill-row">
+          <div class="skill">
+            <img class="skills-img" src="images/skills/javascript.png" title="JavaScript">
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <img class="skills-img" src="images/skills/jquery.png" title="jQuery">
+            <p>jQuery</p>
+          </div>
+          <div class="skill">
+            <img class="skills-img" src="images/skills/react-logo.png" title="Underscore.js">
+            <p>ReactJS</p>
+          </div>
+          <div class="skill">
+            <img class="skills-img" src="images/skills/nodejs.png" title="Backbone.js">
+            <p>Node.js</p>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill">
+            <img class="skills-img" src="images/skills/ruby.png" title="Ruby">
+            <p>Ruby</p>
+          </div>
+          <div class="skill">
+            <img class="skills-img" src="images/skills/ruby-on-rails.png" title="Ruby on Rails">
+            <p>Rails</p>
+          </div>
+          <div class="skill">
+            <img class="skills-img" src="images/skills/postgresql.png">
+            <p>PostgreSQL</p>
+          </div>
+        </div>
+        <div class="skill-row">
+          <div class="skill">
+            <img class="skills-img" src="images/skills/html.png" title="HTML">
+            <p>HTML</p>
+          </div>
+          <div class="skill">
+            <img class="skills-img" src="images/skills/css.png" title="CSS">
+            <p>CSS</p>
+          </div>
+          <div class="skill">
+            <img class="skills-img" src="images/skills/github-icon.png" title="GitHub">
+            <p>GitHub</p>
+          </div>
+          <div class="skill">
+            <img class="skills-img" src="images/skills/msoffice.png" title="MS Office">
+            <p>MS Office</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="about main-segment">
+        <h2>All about me...</h2>
+        <p>I am a Junior Full Stack Web Developer with a passion for JavaScript and a love of finding logical solutions to complex problems.
+        </p>
+        <p>
+          I come from a Financial Services Operations background, and in an attempt to streamline processes when using Excel I started to learn VBA; this piqued my interest in coding enough to enroll in General Assembly's 12 week Web Development Immersive course.
+        </p>
+        <p>
+          The WDI course focused on coding in Ruby on Rails and Vanilla JavaScript, and since the course I have been learning NodeJS and ReactJS.
+        </p>
+        <p class="last">
+          When I'm not in front of a computer I am usually either kitesurfing, playing the guitar, swing dancing, or discovering my local bike paths.
+        </p>
+
+
+
+      </div>
+      <div class="projects main-segment">
+        <h2>My projects...</h2>
+
+        <div class="project">
+          <div class="project-left">
+            <h3 class="project-name">Tic Tac Toe 3D</h3>
+            <p class="project-heading">Tools and tech used:</p>
+            <p class="project-details">
+              <img src="images/skills/react-logo.png" class="tech-logo">
+              <img src="images/skills/javascript.png" class="tech-logo">
+              <img src="images/skills/html.png" class="tech-logo">
+              <img src="images/skills/css.png" class="tech-logo">
+            </p>
+          </div>
+          <div class="project-right">
+            <img src="images/project-screenshots/tictactoe3d.jpg">
+          </div>
+          <p class="project-heading">Description:</p>
+          <p class="project-details">A Tic Tac Toe played over multiple layers built using ReactJS.</p>
+          <p class="project-heading">Links:</p>
+          <p class="project-details">
+            <a href="http://tic-tac-toe-3d.herokuapp.com/" target="_blank">
+              Play the game...
+            </a><br>
+            <a href="https://github.com/SamHumphreys/ReactJS-Tic-Tac-Toe-3D" target="_blank">
+              Check out the code...
+            </a>
+          </p>
+        </div>
+
+        <div class="project">
+          <div class="project-left">
+
+            <h3 class="project-name">LiveWithMe</h3>
+            <p class="project-heading">Tools and tech used:</p>
+            <p class="project-details">
+              <img src="images/skills/javascript.png" class="tech-logo">
+              <img src="images/skills/jquery.png" class="tech-logo">
+              <img src="images/skills/ruby.png" class="tech-logo">
+              <img src="images/skills/ruby-on-rails.png" class="tech-logo">
+              <img src="images/skills/html.png" class="tech-logo">
+              <img src="images/skills/css.png" class="tech-logo">
+            </p>
+          </div>
+          <div class="project-right">
+            <img src="images/project-screenshots/livewithme.jpg">
+          </div>
+          <p class="project-heading">Description:</p>
+          <p class="project-details">The purpose of LiveWithMe is to help people in share houses connect with flatmates. Once you have created your account you can search for available listings, or create your own listing if you are seeking a flatmate. The listings can be set as either available or unavailable by the user who created the listing to stop them from appearing in search results.
+          </p>
+          <p class="project-heading">Links:</p>
+          <p class="project-details">
+            <a href="https://livewithme.herokuapp.com/" target="_blank">
+              Check out the site...
+            </a><br>
+            <a href="https://github.com/SamHumphreys/livewithme" target="_blank">
+              Check out the code...
+            </a>
+          </p>
+        </div>
+
+        <div class="project">
+          <div class="project-left">
+            <h3 class="project-name">Cookr</h3>
+            <p class="project-heading">Tools and tech used:</p>
+            <p class="project-details">
+              <img src="images/skills/javascript.png" class="tech-logo">
+              <img src="images/skills/jquery.png" class="tech-logo">
+              <img src="images/skills/underscore.png" class="tech-logo">
+              <img src="images/skills/ruby.png" class="tech-logo">
+              <img src="images/skills/ruby-on-rails.png" class="tech-logo">
+              <img src="images/skills/html.png" class="tech-logo">
+              <img src="images/skills/css.png" class="tech-logo">
+            </p>
+          </div>
+          <div class="project-right">
+            <img src="images/project-screenshots/cookr.jpg">
+          </div>
+          <p class="project-heading">Description:</p>
+          <p class="project-details">Cookr is an app designed to help users organise dinner parties by hiring chefs who have registered with the site. A chef can upload a list of menu options that they have available, and the dinner hosts can search through the menus that have been uploaded and create an event where the relevant chef will cook the selected menu for the host.
+          </p>
+          <p class="project-details">This app was created as a group project, and my main contribution was the messaging service that the app contains. When a host creates an event a message is sent to the selected chef, who can then respond or discuss details of the event.
+          </p>
+          <p class="project-heading">Links:</p>
+          <p class="project-details">
+            <a href="http://cookrapp.herokuapp.com/" target="_blank">
+              Check out the site...
+            </a><br>
+            <a href="https://github.com/minikus/Cookr" target="_blank">
+              Check out the code...
+            </a>
+          </p>
+        </div>
+
+
+        <div class="project">
+          <div class="project-left">
+            <h3 class="project-name">MessageMe/Howlr</h3>
+            <p class="project-heading">Tools and tech used:</p>
+            <p class="project-details">
+              <img src="images/skills/javascript.png" class="tech-logo">
+              <img src="images/skills/jquery.png" class="tech-logo">
+              <img src="images/skills/underscore.png" class="tech-logo">
+              <img src="images/skills/ruby.png" class="tech-logo">
+              <img src="images/skills/ruby-on-rails.png" class="tech-logo">
+              <img src="images/skills/html.png" class="tech-logo">
+              <img src="images/skills/css.png" class="tech-logo">
+            </p>
+          </div>
+          <div class="project-right">
+            <img src="images/project-screenshots/howlr.jpg">
+          </div>
+          <p class="project-heading">Description:</p>
+          <p class="project-details">After completing Cookr I created MessageMe/Howlr as a messaging app using Websockets to transfer data to and from the server rather than Ajax polling.
+          </p>
+          <p class="project-details">Once a user has logged in they can see a list of all users, view their conversation history with each user and send a new message to another user. The page updates with the number of unread messages, and if a conversation has unread messages the person who sent the message will be coloured red.
+          </p>
+          <p class="project-heading">Links:</p>
+          <p class="project-details">
+            <a href="http://howlatthemoon.herokuapp.com/" target="_blank">
+              Check out the site...
+            </a><br>
+            <a href="https://github.com/SamHumphreys/messageme" target="_blank">
+              Check out the code...
+            </a>
+          </p>
+        </div>
+
+
+    </div>
+  </div>
+</body>
+<footer>
+  Made by Sam Humphreys 2016
+</footer>
+</html>
