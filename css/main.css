@@ -18,6 +18,8 @@ body {
   justify-content: center;
   position: fixed;
   top: 0;
+  margin-top: 10px;
+  background-color: rgba(190, 238, 239, 0.8);
 }
 
 .nav-button {
