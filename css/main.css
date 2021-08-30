@@ -18,15 +18,18 @@ body {
   justify-content: center;
   position: fixed;
   top: 0;
-  margin-top: 10px;
-  background-color: rgba(190, 238, 239, 0.8);
+  padding: 10px;
+  background-color: rgba(95, 158, 160, 0.8);
 }
 
 .nav-button {
   font-size: 25px;
-  border-radius: 10px;
   padding: 1px 10px;
   margin: 0 10px;
+}
+
+.nav-button:hover {
+  border-radius: 10px;
 }
 
 #content {
@@ -116,6 +119,10 @@ p {
   width: 150px;
 }
 
+.skill-project {
+  width: 100px;
+}
+
 .skill > img {
   object-fit: contain;
   margin: 0 auto;
@@ -131,9 +138,44 @@ p {
   width: 80px;
 }
 
+.skill-project > img {
+  height: 70px;
+  width: 70px;
+}
+
 .about > p {
   margin: 20px 20px;
   text-align: justify;
+}
+
+.project {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+}
+
+.project-left > h3 {
+  font-size: 40px;
+}
+
+.project-left, .project-right {
+  width: 49%;
+}
+
+.project-skills {
+  margin-top: 5px;
+}
+
+.project-right > img {
+  object-fit: contain;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+
+footer {
+  text-align: center;
 }
 
 
