@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body {
-  background-color: #beeeef;
+  background-color: cadetblue;
   margin: 0;
   font-family: Roboto;
 }
@@ -151,7 +151,10 @@ p {
 .project {
   display: flex;
   justify-content: space-around;
-  background: white;
+  background-color: cornsilk;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .project-left > h3 {
@@ -170,6 +173,7 @@ p {
   object-fit: contain;
   margin: 0 auto;
   max-width: 100%;
+  margin-top: 40px;
 }
 
 
