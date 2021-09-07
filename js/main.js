@@ -22,7 +22,48 @@ const addContactListeners = () => {
   });
 };
 
-
-
 addButtonListeners();
 addContactListeners();
+
+const removeIntro = () => {
+  document.querySelector('#container').removeChild(document.querySelector('#intro'));
+  document.querySelector('#navbar').style.display = 'flex';
+  document.querySelector('#content').style.display = 'flex';
+};
+
+const typeIntro = () => {
+  
+  const text = ("console.log(\"Hi, I'm Sam\");").split('');
+
+  const introTyping = document.createElement('div')
+  introTyping.classList.add('intro-typing');
+  document.querySelector('#intro').appendChild(introTyping);
+  
+  let count = 0;
+
+  const addLetter = () => {
+  };
+  addLetter();
+  
+};
+
+const runIntro = () => {
+  const container = document.querySelector('#container');
+  const intro = document.createElement('div');
+  //hide navbar
+  document.querySelector('#navbar').style.display = 'none';
+  document.querySelector('#content').style.display = 'none';
+  intro.setAttribute('id', 'intro');
+  container.appendChild(intro);
+
+  //add click to dismiss
+
+  intro.addEventListener('click', () => {
+    removeIntro();
+  });
+
+  typeIntro();
+
+};
+
+runIntro();

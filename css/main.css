@@ -180,10 +180,19 @@ p {
   margin-top: 40px;
 }
 
-
-
 footer {
   text-align: center;
+}
+
+#intro {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: burlywood;
+  cursor: default;
+  display: flex;
 }
 
 
