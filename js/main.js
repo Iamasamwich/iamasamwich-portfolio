@@ -26,43 +26,68 @@ addButtonListeners();
 addContactListeners();
 
 const removeIntro = () => {
-  document.querySelector('#container').removeChild(document.querySelector('#intro'));
+  if (document.querySelector('#intro')) {
+    document.querySelector('#container').removeChild(document.querySelector('#intro'));
+  };
   document.querySelector('#navbar').style.display = 'flex';
   document.querySelector('#content').style.display = 'flex';
+  document.querySelector('footer').style.display = 'block';
+  const heading = document.querySelector('.heading')
+  heading.scrollIntoView();
 };
 
 const typeIntro = () => {
-  
   const text = ("console.log(\"Hi, I'm Sam\");").split('');
+  const introBox = document.createElement('div')
+  introBox.classList.add('intro-box');
+  const typed = document.createElement('h1');
+  introBox.appendChild(typed);
+  document.querySelector('#intro').appendChild(introBox);
 
-  const introTyping = document.createElement('div')
-  introTyping.classList.add('intro-typing');
-  document.querySelector('#intro').appendChild(introTyping);
+  let addedText = '';
   
-  let count = 0;
-
-  const addLetter = () => {
+  const addText = (i) => {
+    const x = 150;
+    if (i < text.length) {
+      addedText += text[i];
+      typed.textContent = '';
+      typed.appendChild(document.createTextNode(addedText));
+      setTimeout(() => {
+        i ++;
+        addText(i);
+      }, x);
+    };
   };
-  addLetter();
-  
+
+  addText(0);
 };
 
 const runIntro = () => {
   const container = document.querySelector('#container');
   const intro = document.createElement('div');
-  //hide navbar
+  intro.setAttribute('id', 'intro');
   document.querySelector('#navbar').style.display = 'none';
   document.querySelector('#content').style.display = 'none';
-  intro.setAttribute('id', 'intro');
+  document.querySelector('footer').style.display = 'none';
   container.appendChild(intro);
 
-  //add click to dismiss
+  const dismiss = document.createElement('div');
+  dismiss.classList.add('dismiss');
+  const h2 = document.createElement('h2');
+  dismiss.appendChild(h2);
+  h2.appendChild(document.createTextNode('*Click anywhere to dismiss*'));
+  intro.appendChild(dismiss);
+  
 
   intro.addEventListener('click', () => {
     removeIntro();
   });
 
   typeIntro();
+
+  setTimeout(() => {
+    removeIntro();
+  }, 6000);
 
 };
 

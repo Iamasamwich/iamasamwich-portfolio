@@ -1,4 +1,5 @@
 * Responsive styling
-* add typewriter
+* <s>Style of footer</s>
+* <s>add typewriter</s>
 * <s>add screenshot of clock</s>
 * <s>Fix spacing around Hi I'm Sam</s>
