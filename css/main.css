@@ -55,6 +55,10 @@ body {
   margin-left: 20px;
 }
 
+.contact {
+  padding-top: 0 !important;
+}
+
 #contact-details {
   width: 100%;
   display: grid;
@@ -169,7 +173,7 @@ p {
   margin-top: 5px;
 }
 
-.project-right > img {
+.project-right > a > img {
   object-fit: contain;
   margin: 0 auto;
   max-width: 100%;
