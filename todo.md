@@ -1,4 +1,4 @@
-* Fix spacing around Hi I'm Sam
 * Responsive styling
 * add typewriter
-* add screenshot of clock
+* <s>add screenshot of clock</s>
+* <s>Fix spacing around Hi I'm Sam</s>
