@@ -25,10 +25,51 @@ const addContactListeners = () => {
 addButtonListeners();
 addContactListeners();
 
+const contents = ['#navbar', '.heading', '.contact', '.about', '.skills', '.projects'];
+
 const removeIntro = () => {
+
+  if (!document.querySelector('#intro')) {
+    return;
+  };
+
+  for (let i = 0; i < contents.length; i ++) {
+    const element = document.querySelector(contents[i]);
+    element.style.opacity = 0;
+  };
+
+  const intro = document.querySelector('#intro');
+  intro.classList.add('fadeout');
+
+  //remove intro, fade in heading after 1.5s
+  setTimeout(() => {
+    document.querySelector('#navbar').style.display = 'flex';
+    document.querySelector('#content').style.display = 'flex';
+  
+    if (document.querySelector('#intro')) {
+      const container = document.querySelector('#container');
+      container.removeChild(intro);
+    };
+    document.querySelector('.heading').classList.add('fadein');
+    return;
+  }, 1500);
+
+  //fade in the rest after 2.5s
+  setTimeout(() => {
+    contents.forEach(item => {
+      const elem = document.querySelector(item);
+      elem.style.opacity = 1;
+    });
+  }, 2500);
+};
+
+const smashRemoveIntro = () => {
   if (document.querySelector('#intro')) {
     document.querySelector('#container').removeChild(document.querySelector('#intro'));
   };
+  contents.forEach(item => {
+    document.querySelector(item).style.opacity = 1;
+  });
   document.querySelector('#navbar').style.display = 'flex';
   document.querySelector('#content').style.display = 'flex';
   document.querySelector('footer').style.display = 'block';
@@ -66,6 +107,9 @@ const runIntro = () => {
   const container = document.querySelector('#container');
   const intro = document.createElement('div');
   intro.setAttribute('id', 'intro');
+
+
+
   document.querySelector('#navbar').style.display = 'none';
   document.querySelector('#content').style.display = 'none';
   document.querySelector('footer').style.display = 'none';
@@ -77,10 +121,11 @@ const runIntro = () => {
   dismiss.appendChild(h2);
   h2.appendChild(document.createTextNode('*Click anywhere to dismiss*'));
   intro.appendChild(dismiss);
+
   
 
   intro.addEventListener('click', () => {
-    removeIntro();
+    smashRemoveIntro();
   });
 
   typeIntro();
