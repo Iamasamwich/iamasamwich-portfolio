@@ -20,6 +20,7 @@ body {
   top: 0;
   padding: 10px;
   background-color: rgba(95, 158, 160, 0.8);
+  z-index: 10;
 }
 
 .nav-button {
