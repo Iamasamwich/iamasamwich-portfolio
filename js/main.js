@@ -41,10 +41,10 @@ const removeIntro = () => {
   const intro = document.querySelector('#intro');
   intro.classList.add('fadeout');
 
-  //remove intro, fade in heading after 1.5s
   setTimeout(() => {
     document.querySelector('#navbar').style.display = 'flex';
     document.querySelector('#content').style.display = 'flex';
+    document.querySelector('footer').style.display = 'block';
   
     if (document.querySelector('#intro')) {
       const container = document.querySelector('#container');
@@ -54,7 +54,6 @@ const removeIntro = () => {
     return;
   }, 1500);
 
-  //fade in the rest after 2.5s
   setTimeout(() => {
     contents.forEach(item => {
       const elem = document.querySelector(item);
