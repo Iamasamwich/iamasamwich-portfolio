@@ -14,7 +14,7 @@ body {
 #navbar {
   height: 50px;
   width: 100vw;
-  display: flex;
+  display: none;
   justify-content: center;
   position: fixed;
   top: 0;
@@ -35,13 +35,14 @@ body {
 
 #content {
   max-width: 960px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
 }
 
 #content > div {
+  opacity: 0;
   padding-top: 60px;
 }
 
@@ -182,6 +183,7 @@ p {
 }
 
 footer {
+  display: none;
   text-align: center;
   margin: 0 auto;
 }

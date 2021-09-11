@@ -66,9 +66,11 @@ const smashRemoveIntro = () => {
   if (document.querySelector('#intro')) {
     document.querySelector('#container').removeChild(document.querySelector('#intro'));
   };
+
   contents.forEach(item => {
     document.querySelector(item).style.opacity = 1;
   });
+  
   document.querySelector('#navbar').style.display = 'flex';
   document.querySelector('#content').style.display = 'flex';
   document.querySelector('footer').style.display = 'block';
