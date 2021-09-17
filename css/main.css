@@ -53,13 +53,13 @@ body {
   justify-content: center;
 }
 
+.heading > h1 {
+  margin-bottom: 7px;
+}
+
 .sub-heading {
   font-size: 40px;
   margin-left: 20px;
-}
-
-.contact {
-  padding-top: 0 !important;
 }
 
 #contact-details {

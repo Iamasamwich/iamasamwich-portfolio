@@ -1,3 +1,4 @@
+* <s>Navbar buttons overscroll</s>
 * <s>Responsive styling</s>
 * <s>Style of footer</s>
 * <s>add typewriter</s>
