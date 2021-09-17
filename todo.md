@@ -1,4 +1,4 @@
-* Responsive styling
+* <s>Responsive styling</s>
 * <s>Style of footer</s>
 * <s>add typewriter</s>
 * <s>add screenshot of clock</s>
